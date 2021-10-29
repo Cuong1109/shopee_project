@@ -45,3 +45,42 @@
     color:var(--white-color);
     margin: 0 3px;
 }
+
+/* Header QR Code */
+@keyframes fadeIn {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+.header__nav-item-link-qr:hover .header__qr{
+    display: block;
+}
+.header__qr{
+    position: absolute;
+    background-color: var(--white-color);
+    width: 180px;
+    left: 0;
+    top:100%;
+    box-shadow: 2px 2px 50px grey;
+    display: none;
+    animation: fadeIn ease-in 0.3s;
+}
+.header__qr-img{
+    width: 100%;
+}
+.header__qr-apps{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.header__qr-link{
+    
+}
+.header__qr-apps-icon{
+    height: 16px;
+    margin: 0 5px;
+}
