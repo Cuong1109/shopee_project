@@ -188,6 +188,9 @@
 /* Modal Authen */
 .auth-form{
     width: 500px;
+    border-radius: 5px;
+    background-color: white;
+    overflow: hidden;
 }
 .auth-form__container{
     padding: 0 32px;
@@ -236,4 +239,32 @@
     margin-top: 80px;
     display: flex;
     justify-content: flex-end;
+}
+.auth-form__control .btn{
+    margin-left: 10px;
+}
+.auth-form__social{
+    margin-top: 30px;
+    background-color: #f5f5f5;
+    padding: 15px 36px;
+    display: flex;
+    justify-content: space-between;
+}
+.btn--width-icon{
+    height: 30px;
+    font-size: 12px;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+}
+.auth-form__social-icon {
+    font-size: 18px;
+    margin-right: 40px;
+}
+.auth-form__social-fb{
+    background: #3a5a98;
+    color: #fff;
+}
+.auth-form__social-gg{
+    background-color: #fff;
 }
