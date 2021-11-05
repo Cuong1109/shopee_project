@@ -85,14 +85,7 @@
     margin: 0 5px;
 }
 /* Header notification */
-@keyframes headerNotifyAppear {
-    from {
-        transform: scale(0);
-    }
-    to{
-        transform: scale(1);
-    }
-}
+
 .header__nav-item-notify:hover .header__notify{
     display: block;
 }
@@ -104,7 +97,7 @@
     width: 400px;
     border: 1px solid #d3d3d3;
     display: none;
-    animation: headerNotifyAppear ease-in 0.2s;
+    animation:growth ease-in 0.2s;
     transform-origin: 95% 0;
     margin-top: 10px;
 }
