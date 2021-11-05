@@ -268,3 +268,17 @@
 .auth-form__social-gg{
     background-color: #fff;
 }
+/* Authen login */
+.auth-form__aside-login .auth-form__policy-text{
+    display: flex;
+    justify-content: end;
+}
+.auth-form__aside-login .auth-form__policy-text a{
+    margin: 0 10px;
+}
+.auth-form__policy-link-help{
+    color: rgb(172, 172, 172);
+}
+.auth-form__control-login{
+    margin-top: 40px;
+}
