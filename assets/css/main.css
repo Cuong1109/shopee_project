@@ -12,11 +12,84 @@
     list-style: none;
     padding-left: 0;
     margin-top: 4px;
+    display: flex;
 }
 .header__nav-item{
-    display: inline-block;
     margin: 0 8px;
     position: relative;
+}
+/* Items user */
+.header__nav-user{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    border-radius: 2px;
+}
+.header__nav-user:hover{
+    cursor: pointer;
+}
+.header__nav-user:hover .header__nav-user-img,
+.header__nav-user:hover .header__nav-user-name{
+    opacity: 0.5;
+}
+.header__nav-user:hover .header__nav-user-list{
+    display: block;
+}
+.header__nav-user-img{
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    border: 1px solid #ee4d2d;
+}
+.header__nav-user-name{
+    margin-left: 8px;
+    font-size: 15px;
+    font-weight: 400;
+    color: white;
+}
+.header__nav-user-list{
+    position: absolute;
+    background-color: white;
+    padding: 0;
+    list-style: none;
+    top:100%;
+    width: 160px;
+    box-shadow: 0 0 1px #000;
+    margin-top: 10px;
+    z-index: 2;
+    display: none;
+}
+.header__nav-user-list::before{
+    content: "";
+    position: absolute;
+    right: 20px;
+    top: -23px;
+    border-width: 12px;
+    border-style: solid;
+    border-color: transparent transparent white transparent;
+}
+.header__nav-user-list::after{
+    content: "";
+    position: absolute;
+    right: 15px;
+    top: -20px;
+    height: 20px;
+    width: 130px;
+}
+.header__nav-user-item{
+    padding: 5px 20px;
+}
+.header__nav-user-item:hover{
+    background-color: #f3efef
+}
+.header__nav-user-item:hover a{
+    color: #26aa99;
+}
+.header__nav-user-link{
+    text-decoration: none;
+    color: #000;
+    font-weight: 500;
+    font-size: 14px;
 }
 .header__nav-item-link,
 .header__nav-item--disable{
@@ -456,9 +529,11 @@
     border-width: 15px;
     border-style: solid;
     border-color: transparent transparent white transparent;
+    display: none;
 }
 .cart-list--empty{
     padding: 28px 0;
+    display: none;
 }
 .cart-list--empty .cart-list-img,
 .cart-list--empty .cart-list-img +p{
@@ -479,6 +554,7 @@
 /* Not empty Cart */
 .cart-cointainer{
     width: 100%;
+    display: none;
 }
 .cart-not-empty__heading{
     text-align: left;
@@ -556,4 +632,11 @@
     float: right;
     margin-right: 10px;
     margin-bottom: 10px;
+}
+.search__cart:hover .cart-cointainer,
+.search__cart:hover .cart-list::after{
+    display: block;
+}
+.search__cart:hover .cart-list--empty .cart-cointainer{
+    display: none;
 }
