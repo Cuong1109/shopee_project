@@ -44,7 +44,7 @@
 .header__nav-user-name{
     margin-left: 8px;
     font-size: 15px;
-    font-weight: 400;
+    font-weight: 700;
     color: white;
 }
 .header__nav-user-list{
@@ -88,19 +88,23 @@
 .header__nav-user-link{
     text-decoration: none;
     color: #000;
-    font-weight: 500;
+    font-weight: 600;
     font-size: 14px;
 }
 .header__nav-item-link,
 .header__nav-item--disable{
-    font-size: 15px;
+    font-size: 13px;
     text-decoration: none;
     color: var(--white-color);
     font-weight: 300;
+    font-weight: 700;
 }
 .header__nav-item-link:hover{
     opacity: 0.5;
     cursor: pointer;
+}
+.header__nav-item-link .icon{
+    margin-right: 3px;
 }
 .header__nav-item-link--strong{
     font-weight: bold
@@ -357,6 +361,9 @@
 .search__logo{
     width: 200px;
 }
+.header__logo-link{
+    text-decoration: none;
+}
 .search__logo-img{
     width: 150px;
     color: #fff;
@@ -424,7 +431,7 @@
 }
 .option-list{
     position: absolute;
-    top: 100%;
+    top: 23px;
     left: 0;
     background-color: #fff;
     list-style: none;
