@@ -30,7 +30,7 @@ html{
 }
 
 .grid{
-    width: 1200px;
+    width: 1000px;
     max-width: 100%;
     margin: 0 auto;
 }
@@ -42,8 +42,24 @@ html{
 .gird__row{
     display: flex;
     flex-wrap: wrap;
+    margin-left: -12px;
+    nav-right: -12px;
 }
-
+.grip__col-2{
+    padding-left: 12px;
+    padding-right: 12px;
+    width: 16.667%;
+}
+.grip__col-8{
+    padding-left: 12px;
+    padding-right: 12px;
+    width: 66.667%;
+}
+.grip__col-10{
+    padding-left: 12px;
+    padding-right: 12px;
+    width: 83.333%;
+}
 /* Modal */
 .modal{
     position: fixed;
