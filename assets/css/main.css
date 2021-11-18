@@ -650,6 +650,9 @@
 .app__container{
     background-color: #f5f5f5;
 }
+.app__content{
+    padding-top: 36px;
+}
 .category{
     background: #ffffff;
     border-radius: 2px;
@@ -657,6 +660,8 @@
 .category__heading{
     font-size: 16px;
     border-bottom: 1px solid #f5f5f5;
+    margin: 0;
+    margin-bottom: 16px;
 }
 .category__heading i{
     padding: 8px 8px 8px 16px;
@@ -694,3 +699,4 @@
     right: 0;
     position: relative;
 }
+/* Home product */
