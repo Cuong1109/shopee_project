@@ -93,6 +93,7 @@ html{
     font-size: 14px;
     cursor: pointer;
     color: var(--text-color);
+    background-color: white;
 }
 .btn.btn--normal:hover{
     background-color: rgba(0, 0, 0, 0.1);
@@ -104,4 +105,46 @@ html{
 .btn.btn--disable{
     background-color: #999;
     cursor: default;
+}
+/* Selection */
+.select-input{
+    min-width: 200px;
+    height: 34px;
+    padding: 0 12px;
+    border-radius: 2px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+.select-input .select-input__label{
+    font-size: 14px;
+}
+.select-input i{
+    font-size: 10px;
+}
+.select-input:hover .select-input__list{
+    display: block;
+}
+.select-input__list{
+    position: absolute;
+    top:20px;
+    left: 0;
+    border-radius: 2px;
+    background-color: white;
+    width: 100%;
+    padding-left: 10px;
+    list-style: none;
+    display: none;
+}
+.select-input__link{
+    font-size: 14px;
+    text-decoration: none;
+    color: #000;
+    padding: 8px 0;
+    display: block;
+}
+.select-input__link:hover{
+    color: var(--primary-color);
 }
