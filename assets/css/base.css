@@ -42,22 +42,27 @@ html{
 .grid__row{
     display: flex;
     flex-wrap: wrap;
-    margin-left: -12px;
-    nav-right: -12px;
+    margin-left: -5px;
+    nav-right: -5px;
 }
 .grip__col-2{
-    padding-left: 12px;
-    padding-right: 12px;
+    padding-left: 5px;
+    padding-right: 5px;
     width: 16.667%;
 }
+.grip__col-2-4{
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 20%;
+}
 .grip__col-8{
-    padding-left: 12px;
-    padding-right: 12px;
+    padding-left: 5px;
+    padding-right: 5px;
     width: 66.667%;
 }
 .grip__col-10{
-    padding-left: 12px;
-    padding-right: 12px;
+    padding-left: 5px;
+    padding-right: 5px;
     width: 83.333%;
 }
 /* Modal */
